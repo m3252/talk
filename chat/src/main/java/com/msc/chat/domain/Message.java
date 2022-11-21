@@ -14,4 +14,13 @@ public class Message {
     public void createTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
+
+    @Override
+    public String toString() {
+        return "Message{" +
+                "sender='" + sender + '\'' +
+                ", content='" + content + '\'' +
+                ", timestamp='" + timestamp + '\'' +
+                '}';
+    }
 }

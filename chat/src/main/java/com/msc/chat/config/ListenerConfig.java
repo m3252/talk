@@ -1,6 +1,6 @@
 package com.msc.chat.config;
 
-import com.msc.chat.domain.KafkaConst;
+import com.msc.chat.KafkaConst;
 import com.msc.chat.domain.Message;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
