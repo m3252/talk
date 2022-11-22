@@ -7,11 +7,15 @@ public class Chat extends BaseEntity {
 
     private Long sequence;
 
-    private Chatroom chatroom;
+    private Long chatroomId;
 
-    private Member member;
+    //memberId
+    private Long from;
 
-    private String message;
+    //memberId
+    private Long to;
+
+    private String content;
 
     private String status;
 }

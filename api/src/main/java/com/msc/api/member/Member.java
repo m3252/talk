@@ -20,8 +20,4 @@ public class Member extends BaseEntity {
 
     private String contactNumber;
 
-    private LocalDate birth;
-
-    private String status;
-
 }
