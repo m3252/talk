@@ -3,6 +3,8 @@ package com.msc.chat.ui;
 import com.msc.chat.application.KafkaSender;
 import com.msc.chat.domain.Message;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
@@ -12,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDateTime;
 
+@Slf4j
 @RestController
 @RequiredArgsConstructor
 public class ChatController {
@@ -24,10 +27,10 @@ public class ChatController {
         kafkaSender.send(message);
     }
 
-    @MessageMapping("/sendMessage")
-    @SendTo("/topic/group")
+    @SendTo("/topic/group") // http://.../app/message로 들어온 메시지를 /topic/group 구독자에게 send
+    @MessageMapping("/message") // works for WebSocket protocol communication. This defines the URL mapping.
     public Message broadcastGroupMessage(@Payload Message message) {
-        //모든 구독자에게 메시지 해당 메시지 보냄
+        log.info("broadcastGroupMessage message = " + message);
         return message;
     }
 

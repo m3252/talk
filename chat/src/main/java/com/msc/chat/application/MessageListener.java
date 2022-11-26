@@ -1,6 +1,6 @@
 package com.msc.chat.application;
 
-import com.msc.chat.KafkaConst;
+import com.msc.chat.config.KafkaConst;
 import com.msc.chat.domain.Message;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
