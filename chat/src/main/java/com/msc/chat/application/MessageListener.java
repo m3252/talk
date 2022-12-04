@@ -1,6 +1,6 @@
 package com.msc.chat.application;
 
-import com.msc.chat.config.KafkaConst;
+import com.msc.chat.config.KafkaConstants;
 import com.msc.chat.domain.Message;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -15,8 +15,8 @@ public class MessageListener {
     private final SimpMessagingTemplate template;
 
     @KafkaListener(
-            topics = KafkaConst.KAFKA_TOPIC,
-            groupId = KafkaConst.GROUP_ID
+            topics = KafkaConstants.KAFKA_TOPIC,
+            groupId = KafkaConstants.GROUP_ID
     )
     public void listen(Message message) {
         log.info("sending listener.. {}", message);
