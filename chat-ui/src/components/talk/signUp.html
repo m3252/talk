@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/412dbb4333.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Sign Up / MakaoTalk</title>
+</head>
+<body class="signUp-body">
+
+<header class="makaoHead" role="banner">
+    <h1 class="makaoServiceLogo">
+        <span class="ir_wa">Makao</span>
+    </h1>
+</header>
+<main class="signUp-main">
+    <div class="signUp-form">
+        <strong class="tf_required">마카오계정 이메일</strong>
+        <div class="item_inp item_tf type_newmail">
+            <label class="lab_g lab_txt lab_placeholder">이메일 주소 입력</label>
+            <input class="tf_g tf_email" name="daum_id" type="text"/>
+        </div>
+
+        <strong class="tf_required">비밀번호</strong>
+        <div class="type_password">
+            <div class="item_inp item_tf">
+                <label class="lab_g lab_placeholder lab_txt">비밀번호(8~32자리)</label>
+                <input class="tf_g" name="new_password" type="password">
+            </div>
+            <div class="item_inp item_tf">
+                <label class="lab_g lab_placeholder lab_txt">비밀번호 재입력</label>
+                <input class="tf_g" name="password_confirm" type="password">
+            </div>
+        </div>
+
+        <strong class="tf_required">닉네임</strong>
+        <div class="item_inp item_tf type_nickname">
+            <label for="id_nickname_13" class="lab_g lab_placeholder lab_txt">닉네임을 입력해주세요.</label>
+            <input class="tf_g " name="nickname" maxlength="20" type="text" id="id_nickname_13">
+            <div class="util_tf">
+                <div class="info_count">
+                    <span class="screen_out">수</span>
+                    <span class="count">0 / 20</span>
+                </div>
+            </div>
+        </div>
+
+        <strong class="tf_required">핸드폰 번호</strong>
+        <div class="item_inp item_tf type_phone">
+            <label for="id_phone_number_14" class="lab_g lab_placeholder lab_txt">전화번호</label>
+            <input data-type="tel" class="tf_g " name="phone_number" type="tel" id="id_phone_number_14">
+            <ul class="list_desc">
+                <li><span class="ico_dot"></span>특수문자를 제외한 숫자만 입력해주세요.</li>
+            </ul>
+        </div>
+
+        <strong class="tf_required">생일</strong>
+        <div class="type_birth">
+            <div class="item_inp item_tf type_birth">
+                <label class="lab_g lab_placeholder lab_txt">생년</label>
+                <input class="tf_g" name="year" type="text">
+            </div>
+            <div class="item_inp item_tf type_birth">
+                <label class="lab_g lab_placeholder lab_txt">월</label>
+                <input class="tf_g" name="month" type="text">
+            </div>
+            <div class="item_inp item_tf type_birth">
+                <label class="lab_g lab_placeholder lab_txt">일</label>
+                <input class="tf_g" name="day" type="text">
+            </div>
+        </div>
+        <ul class="list_desc birth_list">
+            <li><span class="ico_dot"></span>예)1991 03 19</li>
+        </ul>
+
+        <strong class="tf_required">성별</strong>
+        <div class="type_gender">
+            <input type="radio" name="gender" value="none"/>
+            <label class="lab_g lab_placeholder lab_txt">선택없음</label>
+
+            <input type="radio" name="gender" value="1"/>
+            <label class="lab_g lab_placeholder lab_txt">남자</label>
+
+            <input type="radio" name="gender" value="2"/>
+            <label class="lab_g lab_placeholder lab_txt">여자</label>
+        </div>
+
+        <div class="wrap_btn wrap_btn3">
+            <button class="btn_g submit" type="button">회원가입 완료</button>
+        </div>
+
+    </div>
+
+
+</main>
+
+<div class="bigScreen">
+    <span class="bigScreen__text">Please make your screen small! 😣</span>
+</div>
+</body>
+</html>
