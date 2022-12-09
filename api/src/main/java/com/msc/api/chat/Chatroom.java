@@ -1,11 +1,9 @@
 package com.msc.api.chat;
 
-import com.msc.api.global.BaseEntity;
+public class Chatroom {
 
-public class Chatroom extends BaseEntity {
+    private Long id;
 
-    private Long sequence;
-
-    private boolean isDeleted;
+    private String isDeleted;
 
 }

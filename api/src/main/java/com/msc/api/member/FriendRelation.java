@@ -1,9 +1,7 @@
 package com.msc.api.member;
 
-import com.msc.api.global.BaseEntity;
-
-public class FriendRelation extends BaseEntity {
-    private Long sequence;
+public class FriendRelation{
+    private Long id;
     private Long memberId;
     private Long friendId;
     private String friendNickname;

@@ -1,14 +1,8 @@
 package com.msc.api.member;
 
-import com.msc.api.global.BaseEntity;
+public class Member{
 
-import java.time.LocalDate;
-
-public class Member extends BaseEntity {
-
-    private Long sequence;
-
-    private String id;
+    private Long id;
 
     private String email;
 

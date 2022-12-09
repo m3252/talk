@@ -1,11 +1,8 @@
 package com.msc.api.chat;
 
-import com.msc.api.global.BaseEntity;
-import com.msc.api.member.Member;
+public class Chat {
 
-public class Chat extends BaseEntity {
-
-    private Long sequence;
+    private Long id;
 
     private Long chatroomId;
 
@@ -17,5 +14,5 @@ public class Chat extends BaseEntity {
 
     private String content;
 
-    private String status;
+    private String isDeleted;
 }
