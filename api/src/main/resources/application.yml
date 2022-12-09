@@ -7,3 +7,11 @@ spring:
   datasource:
     url: jdbc:h2:tcp://localhost/~/test
     username: sa
+
+  sql:
+    init:
+      mode: always
+      continue-on-error: true
+      data-locations: classpath:sql/data-init.sql
+      schema-locations: classpath:sql/schema-init.sql
+
