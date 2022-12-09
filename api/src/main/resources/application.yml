@@ -12,6 +12,5 @@ spring:
     init:
       mode: always
       continue-on-error: true
-      data-locations: classpath:sql/data-init.sql
       schema-locations: classpath:sql/schema-init.sql
 
