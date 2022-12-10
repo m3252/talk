@@ -12,7 +12,8 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-stomp": "^5.0.0",
-    "sockjs-client": "^1.4.0"
+    "sockjs-client": "^1.4.0",
+    "tar": "^2.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
